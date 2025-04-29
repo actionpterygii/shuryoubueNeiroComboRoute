@@ -1,0 +1,13 @@
+[
+    {"id": 1, "name": "紫", "color": "#9900cc", "type": 1},
+    {"id": 2, "name": "赤", "color": "#ff3333", "type": 2},
+    {"id": 3, "name": "青", "color": "#0066ff", "type": 2},
+    {"id": 4, "name": "空", "color": "#33ffff", "type": 2},
+    {"id": 5, "name": "黄", "color": "#ffff33", "type": 2},
+    {"id": 6, "name": "緑", "color": "#33ff66", "type": 2},
+    {"id": 7, "name": "青", "color": "#0066ff", "type": 3},
+    {"id": 8, "name": "空", "color": "#33ffff", "type": 3},
+    {"id": 9, "name": "黄", "color": "#ffcc33", "type": 3},
+    {"id": 10, "name": "橙", "color": "#ff9933", "type": 3},
+    {"id": 11, "name": "緑", "color": "#33ff66", "type": 3}
+]

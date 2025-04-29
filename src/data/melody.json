@@ -1,0 +1,578 @@
+[
+    {
+        "id": 1,
+        "tone": [
+            1, 2, 9
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "231",
+                "effect_id": 2
+            },
+            {
+                "match": "123",
+                "effect_id": 7
+            },
+            {
+                "match": "333",
+                "effect_id": 31
+            },
+            {
+                "match": "132",
+                "effect_id": 36
+            },
+            {
+                "match": "3231",
+                "effect_id": 37
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "tone": [
+            1, 2, 7
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "1231",
+                "effect_id": 3
+            },
+            {
+                "match": "1331",
+                "effect_id": 6
+            },
+            {
+                "match": "332",
+                "effect_id": 14
+            },
+            {
+                "match": "312",
+                "effect_id": 29
+            },
+            {
+                "match": "132",
+                "effect_id": 36
+            },
+            {
+                "match": "1233",
+                "effect_id": 38
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "tone": [
+            1, 2, 8
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "1231",
+                "effect_id": 3
+            },
+            {
+                "match": "3321",
+                "effect_id": 12
+            },
+            {
+                "match": "323",
+                "effect_id": 19
+            },
+            {
+                "match": "223",
+                "effect_id": 20
+            },
+            {
+                "match": "132",
+                "effect_id": 36
+            },
+            {
+                "match": "1233",
+                "effect_id": 37
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "tone": [
+            1, 6, 9
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "121",
+                "effect_id": 23
+            },
+            {
+                "match": "223",
+                "effect_id": 25
+            },
+            {
+                "match": "1232",
+                "effect_id": 4
+            },
+            {
+                "match": "2331",
+                "effect_id": 29
+            },
+            {
+                "match": "312",
+                "effect_id": 9
+            },
+            {
+                "match": "333",
+                "effect_id": 31
+            },
+            {
+                "match": "132",
+                "effect_id": 36
+            },
+            {
+                "match": "3231",
+                "effect_id": 37
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "tone": [
+            1, 3, 11
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "131",
+                "effect_id": 23
+            },
+            {
+                "match": "3212",
+                "effect_id": 33
+            },
+            {
+                "match": "1323",
+                "effect_id": 27
+            },
+            {
+                "match": "1221",
+                "effect_id": 6
+            },
+            {
+                "match": "223",
+                "effect_id": 14
+            },
+            {
+                "match": "123",
+                "effect_id": 36
+            },
+            {
+                "match": "3231",
+                "effect_id": 39
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "tone": [
+            1, 3, 9
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "132",
+                "effect_id": 27
+            },
+            {
+                "match": "1221",
+                "effect_id": 6
+            },
+            {
+                "match": "321",
+                "effect_id": 10
+            },
+            {
+                "match": "2231",
+                "effect_id": 15
+            },
+            {
+                "match": "333",
+                "effect_id": 31
+            },
+            {
+                "match": "123",
+                "effect_id": 36
+            },
+            {
+                "match": "3231",
+                "effect_id": 38
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "tone": [
+            1, 2, 7
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "1231",
+                "effect_id": 3
+            },
+            {
+                "match": "1331",
+                "effect_id": 6
+            },
+            {
+                "match": "332",
+                "effect_id": 14
+            },
+            {
+                "match": "312",
+                "effect_id": 29
+            },
+            {
+                "match": "132",
+                "effect_id": 36
+            },
+            {
+                "match": "1233",
+                "effect_id": 38
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "tone": [
+            1, 3, 8
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "1323",
+                "effect_id": 27
+            },
+            {
+                "match": "1221",
+                "effect_id": 6
+            },
+            {
+                "match": "321",
+                "effect_id": 17
+            },
+            {
+                "match": "223",
+                "effect_id": 14
+            },
+            {
+                "match": "213",
+                "effect_id": 29
+            },
+            {
+                "match": "123",
+                "effect_id": 36
+            },
+            {
+                "match": "2313",
+                "effect_id": 37
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "tone": [
+            1, 2, 10
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "1332",
+                "effect_id": 3
+            },
+            {
+                "match": "2321",
+                "effect_id": 18
+            },
+            {
+                "match": "323",
+                "effect_id": 32
+            },
+            {
+                "match": "231",
+                "effect_id": 30
+            },
+            {
+                "match": "132",
+                "effect_id": 36
+            },
+            {
+                "match": "1233",
+                "effect_id": 38
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "tone": [
+            1, 6, 8
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "121",
+                "effect_id": 23
+            },
+            {
+                "match": "2213",
+                "effect_id": 24
+            },
+            {
+                "match": "3321",
+                "effect_id": 36
+            },
+            {
+                "match": "3221",
+                "effect_id": 39
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "tone": [
+            1, 4, 9
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "3232",
+                "effect_id": 4
+            },
+            {
+                "match": "321",
+                "effect_id": 8
+            },
+            {
+                "match": "132",
+                "effect_id": 11
+            },
+            {
+                "match": "223",
+                "effect_id": 16
+            },
+            {
+                "match": "231",
+                "effect_id": 21
+            },
+            {
+                "match": "333",
+                "effect_id": 31
+            },
+            {
+                "match": "3221",
+                "effect_id": 39
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "tone": [
+            1, 4, 10
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "2331",
+                "effect_id": 5
+            },
+            {
+                "match": "1312",
+                "effect_id": 28
+            },
+            {
+                "match": "2133",
+                "effect_id": 22
+            },
+            {
+                "match": "323",
+                "effect_id": 36
+            },
+            {
+                "match": "1223",
+                "effect_id": 37
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "tone": [
+            1, 2, 11
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "1231",
+                "effect_id": 3
+            },
+            {
+                "match": "131",
+                "effect_id": 23
+            },
+            {
+                "match": "3321",
+                "effect_id": 26
+            },
+            {
+                "match": "132",
+                "effect_id": 36
+            },
+            {
+                "match": "2313",
+                "effect_id": 39
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "tone": [
+            1, 3, 10
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "1312",
+                "effect_id": 27
+            },
+            {
+                "match": "1221",
+                "effect_id": 6
+            },
+            {
+                "match": "223",
+                "effect_id": 15
+            },
+            {
+                "match": "1233",
+                "effect_id": 35
+            },
+            {
+                "match": "323",
+                "effect_id": 36
+            },
+            {
+                "match": "3213",
+                "effect_id": 37
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "tone": [
+            1, 6, 10
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "121",
+                "effect_id": 23
+            },
+            {
+                "match": "3321",
+                "effect_id": 13
+            },
+            {
+                "match": "2313",
+                "effect_id": 34
+            },
+            {
+                "match": "132",
+                "effect_id": 36
+            },
+            {
+                "match": "1223",
+                "effect_id": 39
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "tone": [
+            1, 5, 10
+        ],
+        "effect": [
+            {
+                "match": "11",
+                "effect_id": 1
+            },
+            {
+                "match": "1323",
+                "effect_id": 4
+            },
+            {
+                "match": "3223",
+                "effect_id": 40
+            },
+            {
+                "match": "333",
+                "effect_id": 31
+            },
+            {
+                "match": "1232",
+                "effect_id": 30
+            },
+            {
+                "match": "321",
+                "effect_id": 36
+            },
+            {
+                "match": "2133",
+                "effect_id": 38
+            }
+        ]
+    }
+]

@@ -1,130 +1,156 @@
 [
     {
+        "id": 1,
         "name": "エスペラホルン",
         "type": "調査隊",
         "melody_id": 1
     },
     {
+        "id": 2,
         "name": "白炎笛アリエント",
         "type": "護火竜",
         "melody_id": 2
     },
     {
+        "id": 3,
         "name": "グレートバグパイプ",
         "type": "鉱石",
         "melody_id": 3
     },
     {
+        "id": 4,
         "name": "断崖のコーヴィラ",
         "type": "凍峰竜",
         "melody_id": 4
     },
     {
+        "id": 5,
         "name": "赫炎笛ジーヴァカ",
         "type": "赫猿獣",
         "melody_id": 3
     },
     {
+        "id": 6,
         "name": "暗琴クージン",
         "type": "暗器蛸",
         "melody_id": 5
     },
     {
+        "id": 7,
         "name": "沙海笛ガントヴィジ",
         "type": "沙海竜",
         "melody_id": 4
     },
     {
+        "id": 8,
         "name": "煌雷鼓ブリスビッツァ",
         "type": "煌雷竜",
         "melody_id": 1
     },
     {
+        "id": 9,
         "name": "ロイヤルビードロー",
         "type": "ランゴスタ",
         "melody_id": 6
     },
     {
+        "id": 10,
         "name": "ハードボーンホルン",
         "type": "骨",
         "melody_id": 7
     },
     {
+        "id": 11,
         "name": "闢轟笛ホンガタピリ",
         "type": "闢獣",
         "melody_id": 8
     },
     {
+        "id": 12,
         "name": "護鎖刃笛ガルシュハド",
         "type": "護鎖刃竜",
         "melody_id": 7
     },
     {
+        "id": 13,
         "name": "鎖刃笛ギャラハッド",
         "type": "鎖刃竜",
         "melody_id": 9
     },
     {
+        "id": 14,
         "name": "護闢轟笛ガルグマピリ",
         "type": "護闢獣",
         "melody_id": 10
     },
     {
+        "id": 15,
         "name": "ウォーコンガ",
         "type": "桃毛獣",
         "melody_id": 7
     },
     {
+        "id": 16,
         "name": "クックカンタービレ",
         "type": "怪鳥",
         "melody_id": 11
     },
     {
+        "id": 17,
         "name": "護雷笛ホーンガルデ",
         "type": "護雷顎竜",
         "melody_id": 11
     },
     {
+        "id": 18,
         "name": "毒笛カプリ【狂奏】",
         "type": "毒怪鳥",
         "melody_id": 12
     },
     {
+        "id": 19,
         "name": "クイーンリコーダー",
         "type": "雌火竜",
         "melody_id": 13
     },
     {
+        "id": 20,
         "name": "火竜笛アンビジオン",
         "type": "火竜",
         "melody_id": 14
     },
     {
+        "id": 21,
         "name": "サウンドofソロウ",
         "type": "黒蝕竜",
         "melody_id": 15
     },
     {
+        "id": 22,
         "name": "オリミティカ無属性",
         "type": "アーティア無属性",
         "melody_id": 14
     },
     {
+        "id": 23,
         "name": "オリミティカ属性",
         "type": "アーティア属性",
         "melody_id": 16
     },
     {
+        "id": 24,
         "name": "オリミティカ状態異常",
         "type": "アーティア状態異常",
         "melody_id": 12
     },
     {
+        "id": 25,
         "name": "熾光たるガヴリア",
         "type": "白熾龍",
         "melody_id": 14
     },
     {
+        "id": 26,
         "name": "なるかみ音鈴の乙鳴",
         "type": "泡狐竜",
         "melody_id": 15

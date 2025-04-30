@@ -4,29 +4,29 @@
         "tone": [
             1, 2, 9
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "231",
+                "score": "231",
                 "effect_id": 2
             },
             {
-                "match": "123",
+                "score": "123",
                 "effect_id": 7
             },
             {
-                "match": "333",
+                "score": "333",
                 "effect_id": 31
             },
             {
-                "match": "132",
+                "score": "132",
                 "effect_id": 36
             },
             {
-                "match": "3231",
+                "score": "3231",
                 "effect_id": 37
             }
         ]
@@ -36,33 +36,33 @@
         "tone": [
             1, 2, 7
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "1231",
+                "score": "1231",
                 "effect_id": 3
             },
             {
-                "match": "1331",
+                "score": "1331",
                 "effect_id": 6
             },
             {
-                "match": "332",
+                "score": "332",
                 "effect_id": 14
             },
             {
-                "match": "312",
+                "score": "312",
                 "effect_id": 29
             },
             {
-                "match": "132",
+                "score": "132",
                 "effect_id": 36
             },
             {
-                "match": "1233",
+                "score": "1233",
                 "effect_id": 38
             }
         ]
@@ -72,33 +72,33 @@
         "tone": [
             1, 2, 8
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "1231",
+                "score": "1231",
                 "effect_id": 3
             },
             {
-                "match": "3321",
+                "score": "3321",
                 "effect_id": 12
             },
             {
-                "match": "323",
+                "score": "323",
                 "effect_id": 19
             },
             {
-                "match": "223",
+                "score": "223",
                 "effect_id": 20
             },
             {
-                "match": "132",
+                "score": "132",
                 "effect_id": 36
             },
             {
-                "match": "1233",
+                "score": "1233",
                 "effect_id": 37
             }
         ]
@@ -108,41 +108,41 @@
         "tone": [
             1, 6, 9
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "121",
+                "score": "121",
                 "effect_id": 23
             },
             {
-                "match": "223",
+                "score": "223",
                 "effect_id": 25
             },
             {
-                "match": "1232",
+                "score": "1232",
                 "effect_id": 4
             },
             {
-                "match": "2331",
+                "score": "2331",
                 "effect_id": 29
             },
             {
-                "match": "312",
+                "score": "312",
                 "effect_id": 9
             },
             {
-                "match": "333",
+                "score": "333",
                 "effect_id": 31
             },
             {
-                "match": "132",
+                "score": "132",
                 "effect_id": 36
             },
             {
-                "match": "3231",
+                "score": "3231",
                 "effect_id": 37
             }
         ]
@@ -152,37 +152,37 @@
         "tone": [
             1, 3, 11
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "131",
+                "score": "131",
                 "effect_id": 23
             },
             {
-                "match": "3212",
+                "score": "3212",
                 "effect_id": 33
             },
             {
-                "match": "1323",
+                "score": "1323",
                 "effect_id": 27
             },
             {
-                "match": "1221",
+                "score": "1221",
                 "effect_id": 6
             },
             {
-                "match": "223",
+                "score": "223",
                 "effect_id": 14
             },
             {
-                "match": "123",
+                "score": "123",
                 "effect_id": 36
             },
             {
-                "match": "3231",
+                "score": "3231",
                 "effect_id": 39
             }
         ]
@@ -192,37 +192,37 @@
         "tone": [
             1, 3, 9
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "132",
+                "score": "132",
                 "effect_id": 27
             },
             {
-                "match": "1221",
+                "score": "1221",
                 "effect_id": 6
             },
             {
-                "match": "321",
+                "score": "321",
                 "effect_id": 10
             },
             {
-                "match": "2231",
+                "score": "2231",
                 "effect_id": 15
             },
             {
-                "match": "333",
+                "score": "333",
                 "effect_id": 31
             },
             {
-                "match": "123",
+                "score": "123",
                 "effect_id": 36
             },
             {
-                "match": "3231",
+                "score": "3231",
                 "effect_id": 38
             }
         ]
@@ -232,33 +232,33 @@
         "tone": [
             1, 2, 7
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "1231",
+                "score": "1231",
                 "effect_id": 3
             },
             {
-                "match": "1331",
+                "score": "1331",
                 "effect_id": 6
             },
             {
-                "match": "332",
+                "score": "332",
                 "effect_id": 14
             },
             {
-                "match": "312",
+                "score": "312",
                 "effect_id": 29
             },
             {
-                "match": "132",
+                "score": "132",
                 "effect_id": 36
             },
             {
-                "match": "1233",
+                "score": "1233",
                 "effect_id": 38
             }
         ]
@@ -268,37 +268,37 @@
         "tone": [
             1, 3, 8
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "1323",
+                "score": "1323",
                 "effect_id": 27
             },
             {
-                "match": "1221",
+                "score": "1221",
                 "effect_id": 6
             },
             {
-                "match": "321",
+                "score": "321",
                 "effect_id": 17
             },
             {
-                "match": "223",
+                "score": "223",
                 "effect_id": 14
             },
             {
-                "match": "213",
+                "score": "213",
                 "effect_id": 29
             },
             {
-                "match": "123",
+                "score": "123",
                 "effect_id": 36
             },
             {
-                "match": "2313",
+                "score": "2313",
                 "effect_id": 37
             }
         ]
@@ -308,33 +308,33 @@
         "tone": [
             1, 2, 10
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "1332",
+                "score": "1332",
                 "effect_id": 3
             },
             {
-                "match": "2321",
+                "score": "2321",
                 "effect_id": 18
             },
             {
-                "match": "323",
+                "score": "323",
                 "effect_id": 32
             },
             {
-                "match": "231",
+                "score": "231",
                 "effect_id": 30
             },
             {
-                "match": "132",
+                "score": "132",
                 "effect_id": 36
             },
             {
-                "match": "1233",
+                "score": "1233",
                 "effect_id": 38
             }
         ]
@@ -344,25 +344,25 @@
         "tone": [
             1, 6, 8
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "121",
+                "score": "121",
                 "effect_id": 23
             },
             {
-                "match": "2213",
+                "score": "2213",
                 "effect_id": 24
             },
             {
-                "match": "3321",
+                "score": "3321",
                 "effect_id": 36
             },
             {
-                "match": "3221",
+                "score": "3221",
                 "effect_id": 39
             }
         ]
@@ -372,37 +372,37 @@
         "tone": [
             1, 4, 9
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "3232",
+                "score": "3232",
                 "effect_id": 4
             },
             {
-                "match": "321",
+                "score": "321",
                 "effect_id": 8
             },
             {
-                "match": "132",
+                "score": "132",
                 "effect_id": 11
             },
             {
-                "match": "223",
+                "score": "223",
                 "effect_id": 16
             },
             {
-                "match": "231",
+                "score": "231",
                 "effect_id": 21
             },
             {
-                "match": "333",
+                "score": "333",
                 "effect_id": 31
             },
             {
-                "match": "3221",
+                "score": "3221",
                 "effect_id": 39
             }
         ]
@@ -412,29 +412,29 @@
         "tone": [
             1, 4, 10
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "2331",
+                "score": "2331",
                 "effect_id": 5
             },
             {
-                "match": "1312",
+                "score": "1312",
                 "effect_id": 28
             },
             {
-                "match": "2133",
+                "score": "2133",
                 "effect_id": 22
             },
             {
-                "match": "323",
+                "score": "323",
                 "effect_id": 36
             },
             {
-                "match": "1223",
+                "score": "1223",
                 "effect_id": 37
             }
         ]
@@ -444,29 +444,29 @@
         "tone": [
             1, 2, 11
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "1231",
+                "score": "1231",
                 "effect_id": 3
             },
             {
-                "match": "131",
+                "score": "131",
                 "effect_id": 23
             },
             {
-                "match": "3321",
+                "score": "3321",
                 "effect_id": 26
             },
             {
-                "match": "132",
+                "score": "132",
                 "effect_id": 36
             },
             {
-                "match": "2313",
+                "score": "2313",
                 "effect_id": 39
             }
         ]
@@ -476,33 +476,33 @@
         "tone": [
             1, 3, 10
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "1312",
+                "score": "1312",
                 "effect_id": 27
             },
             {
-                "match": "1221",
+                "score": "1221",
                 "effect_id": 6
             },
             {
-                "match": "223",
+                "score": "223",
                 "effect_id": 15
             },
             {
-                "match": "1233",
+                "score": "1233",
                 "effect_id": 35
             },
             {
-                "match": "323",
+                "score": "323",
                 "effect_id": 36
             },
             {
-                "match": "3213",
+                "score": "3213",
                 "effect_id": 37
             }
         ]
@@ -512,29 +512,29 @@
         "tone": [
             1, 6, 10
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "121",
+                "score": "121",
                 "effect_id": 23
             },
             {
-                "match": "3321",
+                "score": "3321",
                 "effect_id": 13
             },
             {
-                "match": "2313",
+                "score": "2313",
                 "effect_id": 34
             },
             {
-                "match": "132",
+                "score": "132",
                 "effect_id": 36
             },
             {
-                "match": "1223",
+                "score": "1223",
                 "effect_id": 39
             }
         ]
@@ -544,33 +544,33 @@
         "tone": [
             1, 5, 10
         ],
-        "effect": [
+        "effects": [
             {
-                "match": "11",
+                "score": "11",
                 "effect_id": 1
             },
             {
-                "match": "1323",
+                "score": "1323",
                 "effect_id": 4
             },
             {
-                "match": "3223",
+                "score": "3223",
                 "effect_id": 40
             },
             {
-                "match": "333",
+                "score": "333",
                 "effect_id": 31
             },
             {
-                "match": "1232",
+                "score": "1232",
                 "effect_id": 30
             },
             {
-                "match": "321",
+                "score": "321",
                 "effect_id": 36
             },
             {
-                "match": "2133",
+                "score": "2133",
                 "effect_id": 38
             }
         ]

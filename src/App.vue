@@ -25,17 +25,6 @@ hornes.forEach((horn) => {
   });
 });
 
-// 
-const formatSelectionHornHTML = ((horn) => {
-  const colored_tone = horn.tone_ja.split("")
-    .map((char, index) => {
-      const color = horn.tone_color[index];
-      return `<span style="color: ${color}">${char}</span>`;
-    })
-    .join("");
-  return `${horn.name} (${colored_tone})`;
-});
-
 // 選択中の狩猟笛id
 const selected_horn_id = ref(null);
 // 選択中の狩猟笛

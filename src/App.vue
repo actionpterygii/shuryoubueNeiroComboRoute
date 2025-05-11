@@ -36,34 +36,35 @@ const added_effects = ref([]);
 
 // 譜面に追加
 const addEffects = (event, effect) => {
+  // 追加する旋律効果
+  let add_effect = { ...effect };
   // 音符並びHTML要素を取得
-  let score_html = event.currentTarget.querySelector("span").innerHTML
+  let score_html = event.currentTarget.querySelector("span").innerHTML;
   console.log(added_effects.value.length);
   // 最初じゃない場合
   if (added_effects.value.length > 0) {
-    // 既存の最後のスコアの最初の1つを切り取ったものを取得
-    const last_score_fc = added_effects.value[added_effects.value.length - 1].score.slice(1);
+    // 既存の最後のスコア
+    const last_score_fc = added_effects.value[added_effects.value.length - 1].score;
     console.log(last_score_fc);
-    // 今回追加するスコアの最後の1つを切り取ったものを取得
-    const add_score_fc = effect.score.slice(0, -1);
-    console.log(effect.score);
+    // 今回追加するスコア
+    const add_score_fc = add_effect.score;
+    console.log(add_effect.score);
     console.log(add_score_fc);
 
     // 一致位置（ない場合は0）
     let position = 0;
     // 今回追加を後ろから前に移動させて一致箇所を探す
-    for (let i = 1; i <= add_score_fc.length; i++) {
-      const sub_last_score_fc = last_score_fc.slice(Math.max(0, last_score_fc.length - i));
+    for (let i = 0; i <= add_score_fc.length; i++) {
+      const sub_last_score_fc = last_score_fc.slice(-i);
       const sub_add_score_fc = add_score_fc.slice(0, i);
       console.log('naka');
       console.log(sub_last_score_fc);
 
-      // 一致したら終了
-      if (sub_last_score_fc === sub_add_score_fc) {
+      // 一致したら終了(既存の最後と完全一致はNG)
+      if (sub_last_score_fc === sub_add_score_fc && !(last_score_fc === add_score_fc && sub_last_score_fc === last_score_fc && sub_add_score_fc === add_score_fc)) {
         position = i;
         console.log('owa');
         console.log(position);
-
         break;
       }
     }
@@ -71,8 +72,8 @@ const addEffects = (event, effect) => {
     // 一致ある場合
     if (position > 0) {
       // スコアを短くしたやつで上書き
-      effect.score = effect.score.slice(position);
-      console.log(effect.score);
+      add_effect.score = add_effect.score.slice(position);
+      console.log(add_effect.score);
 
       // 音符並びHTMLも短く
       score_html = score_html.replace(/<span[^>]*>.*?<\/span>/g, (match) => {
@@ -88,16 +89,17 @@ const addEffects = (event, effect) => {
 
     }
   }
-  console.log(effect.score);
+  console.log(add_effect.score);
 
   added_effects.value.push({
-    ...effect,
+    ...add_effect,
     score_html: score_html
   });
 };
 // 譜面から全削除
 const removeAllEffect = () => {
   added_effects.value = [];
+  // todo;ボタンのやつも全削除
 };
 
 // 譜面の生成
@@ -114,6 +116,7 @@ const formatScore = (score, tone_colors) => {
         v-model="selected_horn_id"
         id="horn_select"
       >
+       <!-- todo;選択時譜面とか全部クリア -->
         <option
           v-for="horn in hornes"
           :key="horn.id"

@@ -5,13 +5,8 @@ import effects_data from "./data/effects.json";
 import melodies_data from "./data/melodies.json";
 import horns_data from "./data/horns.json";
 import tones_data from "./data/tones.json";
+import score_map from "./data/score_map.json";
 
-// 音色変換用
-const score_map = {
-  "1": "♩",
-  "2": "♪",
-  "3": "♫"
-};
 
 const hornes = horns_data;
 hornes.forEach((horn) => {
@@ -41,15 +36,68 @@ const added_effects = ref([]);
 
 // 譜面に追加
 const addEffects = (event, effect) => {
+  // 音符並びHTML要素を取得
+  let score_html = event.currentTarget.querySelector("span").innerHTML
+  console.log(added_effects.value.length);
+  // 最初じゃない場合
+  if (added_effects.value.length > 0) {
+    // 既存の最後のスコアの最初の1つを切り取ったものを取得
+    const last_score_fc = added_effects.value[added_effects.value.length - 1].score.slice(1);
+    console.log(last_score_fc);
+    // 今回追加するスコアの最後の1つを切り取ったものを取得
+    const add_score_fc = effect.score.slice(0, -1);
+    console.log(effect.score);
+    console.log(add_score_fc);
+
+    // 一致位置（ない場合は0）
+    let position = 0;
+    // 今回追加を後ろから前に移動させて一致箇所を探す
+    for (let i = 1; i <= add_score_fc.length; i++) {
+      const sub_last_score_fc = last_score_fc.slice(Math.max(0, last_score_fc.length - i));
+      const sub_add_score_fc = add_score_fc.slice(0, i);
+      console.log('naka');
+      console.log(sub_last_score_fc);
+
+      // 一致したら終了
+      if (sub_last_score_fc === sub_add_score_fc) {
+        position = i;
+        console.log('owa');
+        console.log(position);
+
+        break;
+      }
+    }
+    console.log(position);
+    // 一致ある場合
+    if (position > 0) {
+      // スコアを短くしたやつで上書き
+      effect.score = effect.score.slice(position);
+      console.log(effect.score);
+
+      // 音符並びHTMLも短く
+      score_html = score_html.replace(/<span[^>]*>.*?<\/span>/g, (match) => {
+        console.log(match);
+        if (position > 0) {
+          position--;
+          // 置き換え
+          return '';
+        }
+        return match;
+      });
+      console.log(score_html);
+
+    }
+  }
+  console.log(effect.score);
+
   added_effects.value.push({
     ...effect,
-    // 音符並びHTMLも追加
-    score_html: event.currentTarget.querySelector("span").innerHTML
+    score_html: score_html
   });
 };
-// 譜面から削除
-const removeEffect = (index) => {
-  added_effects.value.splice(index, 1);
+// 譜面から全削除
+const removeAllEffect = () => {
+  added_effects.value = [];
 };
 
 // 譜面の生成
@@ -62,7 +110,10 @@ const formatScore = (score, tone_colors) => {
   <main>
     <div>
       <label for="horn_select">狩猟笛を選択</label>
-      <select id="horn_select" v-model="selected_horn_id">
+      <select
+        v-model="selected_horn_id"
+        id="horn_select"
+      >
         <option
           v-for="horn in hornes"
           :key="horn.id"
@@ -101,14 +152,15 @@ const formatScore = (score, tone_colors) => {
             v-html="added_effect.score_html"
           ></div>
         </div>
-        <button
-          @click="removeEffect(index)"
-          class="remove_effect_button"
-        >
-          ×
-        </button>
       </div>
     </div>
+    <button
+      v-if="added_effects.length"
+      @click="removeAllEffect()"
+      class="remove_all_effect_button"
+    >
+      ×
+    </button>
   </main>
 </template>
 
@@ -153,14 +205,6 @@ main {
 .added_effects div {
   position: relative;
 }
-.added_effects div button {
-  position: absolute;
-  top: -15px;
-  right: 0px;
-  background: none;
-  cursor: pointer;
-  line-height: 16px;
-}
 .added_effects div div {
 }
 .added_effects div div div {
@@ -172,5 +216,9 @@ main {
 }
 .added_effects div div div span {
   font-size: 35px;
+}
+.remove_all_effect_button {
+  cursor: pointer;
+  line-height: 16px;
 }
 </style>

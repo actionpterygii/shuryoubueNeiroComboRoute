@@ -31,8 +31,14 @@ hornes.forEach((horn) => {
 const selected_horn_id = ref(null);
 // 選択中の狩猟笛
 const selected_horn = computed(() => hornes.find(horn => horn.id == selected_horn_id.value) || null);
-// 選択中の譜面
+// 選択中の効果
 const added_effects = ref([]);
+// 選択中の譜面
+const added_score = ref([]);
+// これから見る譜面の最初
+const score_pointer = ref(0);
+// コマンド
+const added_commandes = ref([]);
 
 // 譜面に追加
 const addEffects = (event, effect) => {
@@ -91,6 +97,8 @@ const addEffects = (event, effect) => {
   }
   console.log(add_effect.score);
 
+  added_score.value.push(...add_effect.score);
+
   added_effects.value.push({
     ...add_effect,
     score_html: score_html
@@ -113,6 +121,7 @@ const formatScore = (score, tone_colors) => {
     <div>
       <label for="horn_select">狩猟笛を選択</label>
       <select
+        @change="removeAllEffect"
         v-model="selected_horn_id"
         id="horn_select"
       >

@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1,
+        "note": 1,
+        "text": "左ぶん回し",
+        "button": "△",
+        "first": true,
+        "second": true,
+        "prev_ex_ok": [],
+        "prev_ex_ng": [1]
+    },
+    {
+        "id": 2,
+        "note": 1,
+        "text": "前方攻撃(c)",
+        "button": "△",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [1],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 3,
+        "note": 1,
+        "text": "前方攻撃",
+        "button": "L↑ + △",
+        "first": true,
+        "second": true,
+        "prev_ex_ok": [],
+        "prev_ex_ng": [2, 3, 23]
+    },
+    {
+        "id": 4,
+        "note": 2,
+        "text": "右ぶん回し",
+        "button": "◯",
+        "first": true,
+        "second": true,
+        "prev_ex_ok": [],
+        "prev_ex_ng": [4, 24]
+    },
+    {
+        "id": 5,
+        "note": 2,
+        "text": "連音攻撃(c)",
+        "button": "◯",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [4, 24],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 6,
+        "note": 2,
+        "text": "連音攻撃",
+        "button": "L + ◯",
+        "first": true,
+        "second": true,
+        "prev_ex_ok": [],
+        "prev_ex_ng": [5, 6, 7, 8, 9]
+    },
+    {
+        "id": 7,
+        "note": 1,
+        "text": "連音攻撃追加入力(1)",
+        "button": "△",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [5, 6],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 8,
+        "note": 2,
+        "text": "連音攻撃追加入力(2)",
+        "button": "◯",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [5, 6],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 9,
+        "note": 3,
+        "text": "連音攻撃追加入力(3)",
+        "button": "△ + ◯",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [5, 6],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 10,
+        "note": 3,
+        "text": "後方攻撃",
+        "button": "△ + ◯",
+        "first": true,
+        "second": true,
+        "prev_ex_ok": [],
+        "prev_ex_ng": [10, 25]
+    },
+    {
+        "id": 11,
+        "note": 3,
+        "text": "叩きつけ(c)",
+        "button": "△ + ◯",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [10, 25],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 12,
+        "note": 3,
+        "text": "叩きつけ",
+        "button": "L + △ + ◯",
+        "first": true,
+        "second": true,
+        "prev_ex_ok": [],
+        "prev_ex_ng": [11, 12, 13, 14, 15]
+    },
+    {
+        "id": 13,
+        "note": 1,
+        "text": "叩きつけ追加入力(1)",
+        "button": "△",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [11, 12],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 14,
+        "note": 2,
+        "text": "叩きつけ追加入力(2)",
+        "button": "◯",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [11, 12],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 15,
+        "note": 3,
+        "text": "叩きつけ追加入力(3)",
+        "button": "△ + ◯",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [11, 12],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 16,
+        "note": 3,
+        "text": "叩きつけ・追撃",
+        "button": "L + △ + ◯",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [11, 12, 13, 14, 15],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 17,
+        "note": 1,
+        "text": "柄攻撃(1)",
+        "button": "L↓ + △",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [],
+        "prev_ex_ng": [29, 30, 31, 42, 59, 60]
+    },
+    {
+        "id": 18,
+        "note": 2,
+        "text": "柄攻撃(2)",
+        "button": "L↓ + ◯",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [],
+        "prev_ex_ng": [29, 30, 31, 42, 59, 60]
+    },
+    {
+        "id": 19,
+        "note": 3,
+        "text": "柄攻撃(3)",
+        "button": "L↓ + △ + ◯",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [],
+        "prev_ex_ng": [29, 30, 31, 42, 59, 60]
+    },
+    {
+        "id": 20,
+        "note": 1,
+        "text": "ジャンプ叩きつけ(1)",
+        "button": "△",
+        "first": true,
+        "second": false,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 21,
+        "note": 2,
+        "text": "ジャンプ叩きつけ(2)",
+        "button": "◯",
+        "first": true,
+        "second": false,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 22,
+        "note": 3,
+        "text": "ジャンプ叩きつけ(3)",
+        "button": "△ + ◯",
+        "first": true,
+        "second": false,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 23,
+        "note": 1,
+        "text": "【抜刀】前方攻撃",
+        "button": "L↑ + △",
+        "first": true,
+        "second": false,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 24,
+        "note": 2,
+        "text": "【抜刀】右ぶん回し",
+        "button": "L↑ + △ ⇒ ◯",
+        "first": true,
+        "second": false,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 25,
+        "note": 3,
+        "text": "【抜刀】後方攻撃",
+        "button": "L↑ + △ ⇒ △ + ◯",
+        "first": true,
+        "second": false,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 26,
+        "note": 1,
+        "text": "【抜刀】ジャンプ叩きつけ(1)",
+        "button": "△",
+        "first": true,
+        "second": false,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 27,
+        "note": 2,
+        "text": "【抜刀】ジャンプ叩きつけ(2)",
+        "button": "△ ⇒ ◯",
+        "first": true,
+        "second": false,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 28,
+        "note": 3,
+        "text": "【抜刀】ジャンプ叩きつけ(3)",
+        "button": "△ ⇒ △ + ◯",
+        "first": true,
+        "second": false,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 29,
+        "note": 1,
+        "text": "【抜刀】下乗攻撃(1)",
+        "button": "△ + ◯ ⇒ △",
+        "first": true,
+        "second": false,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 30,
+        "note": 2,
+        "text": "【抜刀】下乗攻撃(2)",
+        "button": "△ + ◯ ⇒ ◯",
+        "first": true,
+        "second": false,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 31,
+        "note": 3,
+        "text": "【抜刀】下乗攻撃(3)",
+        "button": "△ + ◯",
+        "first": true,
+        "second": false,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 32,
+        "note": 0,
+        "text": "響玉",
+        "button": "R2 + ✕",
+        "first": true,
+        "second": true,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 33,
+        "note": 1,
+        "text": "響玉追加入力1(1)",
+        "button": "△",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [32],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 34,
+        "note": 2,
+        "text": "響玉追加入力1(2)",
+        "button": "◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [32],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 35,
+        "note": 3,
+        "text": "響玉追加入力1(3)",
+        "button": "△ + ◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [32],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 36,
+        "note": 1,
+        "text": "響玉追加入力2(1)",
+        "button": "△",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [33, 34, 35],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 37,
+        "note": 2,
+        "text": "響玉追加入力2(2)",
+        "button": "◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [33, 34, 35],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 38,
+        "note": 3,
+        "text": "響玉追加入力2(3)",
+        "button": "△ + ◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [33, 34, 35],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 39,
+        "note": 1,
+        "text": "響玉追加入力3(1)",
+        "button": "△",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [36, 37, 38],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 40,
+        "note": 2,
+        "text": "響玉追加入力3(2)",
+        "button": "◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [36, 37, 38],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 41,
+        "note": 3,
+        "text": "響玉追加入力3(3)",
+        "button": "△ + ◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [36, 37, 38],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 42,
+        "note": 0,
+        "text": "響玉終了",
+        "button": "",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [33, 34, 35, 36, 37, 38, 39, 40, 41],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 43,
+        "note": 0,
+        "text": "集中音撃【残響】",
+        "button": "L2 + R1",
+        "first": true,
+        "second": true,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 44,
+        "note": 1,
+        "text": "集中音撃追加入力1(1)",
+        "button": "△",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [43],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 45,
+        "note": 2,
+        "text": "集中音撃追加入力1(2)",
+        "button": "◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [43],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 46,
+        "note": 3,
+        "text": "集中音撃追加入力1(3)",
+        "button": "△ + ◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [43],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 47,
+        "note": 1,
+        "text": "集中音撃追加入力2(1)",
+        "button": "△",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [44, 45, 46],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 48,
+        "note": 2,
+        "text": "集中音撃追加入力2(2)",
+        "button": "◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [44, 45, 46],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 49,
+        "note": 3,
+        "text": "集中音撃追加入力2(3)",
+        "button": "△ + ◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [44, 45, 46],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 50,
+        "note": 1,
+        "text": "集中音撃追加入力3(1)",
+        "button": "△",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [47, 48, 49],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 51,
+        "note": 2,
+        "text": "集中音撃追加入力3(2)",
+        "button": "◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [47, 48, 49],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 52,
+        "note": 3,
+        "text": "集中音撃追加入力3(3)",
+        "button": "△ + ◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [47, 48, 49],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 53,
+        "note": 1,
+        "text": "集中音撃追加入力4(1)",
+        "button": "△",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [50, 51, 52],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 54,
+        "note": 2,
+        "text": "集中音撃追加入力4(2)",
+        "button": "◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [50, 51, 52],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 55,
+        "note": 3,
+        "text": "集中音撃追加入力4(3)",
+        "button": "△ + ◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [50, 51, 52],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 56,
+        "note": 1,
+        "text": "集中音撃追加入力5(1)",
+        "button": "△",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [53, 54, 55],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 57,
+        "note": 2,
+        "text": "集中音撃追加入力5(2)",
+        "button": "◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [53, 54, 55],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 58,
+        "note": 3,
+        "text": "集中音撃追加入力5(3)",
+        "button": "△ + ◯",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [53, 54, 55],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 59,
+        "note": 0,
+        "text": "集中音撃終了",
+        "button": "",
+        "first": false,
+        "second": false,
+        "prev_ex_ok": [44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58],
+        "prev_ex_ng": []
+    },
+    {
+        "id": 60,
+        "note": 0,
+        "text": "休み",
+        "button": "",
+        "first": false,
+        "second": true,
+        "prev_ex_ok": [],
+        "prev_ex_ng": []
+    }
+]

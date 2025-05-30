@@ -167,7 +167,7 @@
         "first": false,
         "second": true,
         "prev_ex_ok": [],
-        "prev_ex_ng": [29, 30, 31, 42, 59, 60]
+        "prev_ex_ng": [17, 18, 19, 29, 30, 31, 42, 59, 60]
     },
     {
         "id": 18,
@@ -177,7 +177,7 @@
         "first": false,
         "second": true,
         "prev_ex_ok": [],
-        "prev_ex_ng": [29, 30, 31, 42, 59, 60]
+        "prev_ex_ng": [17, 18, 19, 29, 30, 31, 42, 59, 60]
     },
     {
         "id": 19,
@@ -187,7 +187,7 @@
         "first": false,
         "second": true,
         "prev_ex_ok": [],
-        "prev_ex_ng": [29, 30, 31, 42, 59, 60]
+        "prev_ex_ng": [17, 18, 19, 29, 30, 31, 42, 59, 60]
     },
     {
         "id": 20,

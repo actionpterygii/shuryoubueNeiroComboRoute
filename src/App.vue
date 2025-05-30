@@ -56,13 +56,28 @@ const selectable_commands = computed(() => {
   // 見る譜
   const score = added_score.value[score_pointer.value];
   // 最初の場合
-  if (score_pointer.value === 0) {
-    return commands.filter(command => command.first === true && command.note === score);
+  if (added_commands.value.length === 0) {
+    return commands.filter(command =>
+      command.first === true &&
+      (command.note === score || command.note === 0));
   // 最初以外の場合
   } else {
-    // 
-    return commands.filter(command => command.second === true && command.note === score);
-
+    // 前のコマンド
+    const last_command = added_commands.value[added_commands.value.length - 1];
+    // 前のコマンドがnote:0(終了を除く)もしくは特殊コマンド途中の場合
+    if (
+    (last_command.note === 0 && last_command.first === true) ||
+    (last_command.note !== 0 && last_command.first === false && last_command.second === false)) {
+      return commands.filter(command =>
+        command.prev_ex_ok.includes(last_command.id) &&
+        (command.note === score || command.note === 0));
+    } else {
+      return commands.filter(command =>
+        command.second === true &&
+        (command.prev_ex_ok.length === 0 || command.prev_ex_ok.includes(last_command.id)) &&
+        (command.prev_ex_ng.length === 0 || !command.prev_ex_ng.includes(last_command.id)) &&
+        (command.note === score || command.note === 0));
+    }
   }
 });
 // 選択中のコマンド
@@ -121,7 +136,10 @@ const addCommand = () => {
   const command_id = selected_command.value;
   const command = commands.find(command => command.id === command_id);
   added_commands.value.push(command);
-  ++score_pointer.value;
+  // note:0対応
+  if (command.note !== 0) {
+    ++score_pointer.value;
+  }
   selected_command.value = null;
 };
 // 譜面から全削除
@@ -134,7 +152,10 @@ const removeAllEffect = () => {
 };
 // コマンドを一つ削除
 const removeCommand = () => {
-   --score_pointer.value;
+  // note:0対応
+  if (score_pointer.value >= 1) {
+    --score_pointer.value;
+  }
   added_commands.value.pop();
 };
 

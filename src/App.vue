@@ -8,7 +8,6 @@ import tones_data from "./data/tones.json";
 import score_map from "./data/score_map.json";
 import commands from "./data/commands.json";
 
-
 const hornes = horns_data;
 hornes.forEach((horn) => {
   // 笛ごとに旋律データを追加
@@ -166,7 +165,7 @@ const formatScore = (score, tone_colors) => {
 </script>
 
 <template>
-  <main>
+  <main class="m-2">
     <div class="block mb-6">
       <div class="title is-4">モンハンワイルズ狩猟笛音色コンボルート選定ツール</div>
       <a
@@ -221,11 +220,11 @@ const formatScore = (score, tone_colors) => {
         <div class="mb-4">
           選択された旋律
         </div>
-        <div class="is-flex added_effects">
+        <div class="is-flex is-flex-wrap-wrap added_effects">
           <div
             v-for="(added_effect, index) in added_effects"
             :key="index"
-            class="mr-2"
+            class="mr-2 mt-4"
           >
             <p class="is-size-7 has-text-centered">
               {{ added_effect.effect_name }}
@@ -297,21 +296,10 @@ const formatScore = (score, tone_colors) => {
 </template>
 
 <style>
-main {
-  color: #333333;
-  margin: 10px;
-}
-
-/* 選択された旋律 */
-.added_effects {
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
+/* コマンド間矢印 */
 .added_command {
   position: relative;
 }
-
 .added_command:not(:last-child)::after {
   content: "→";
   font-size: 0.75rem;
@@ -321,11 +309,10 @@ main {
   top: 50%;
   transform: translateY(-50%);
 }
-
+/* actionpterygii */
 .actionpterygii {
   color: #33cccc;
 }
-
 /* bulma+ */
 .is-size-2 span {
   font-size: 2.5rem;

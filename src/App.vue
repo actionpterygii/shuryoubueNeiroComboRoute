@@ -46,8 +46,10 @@ const next_tone = computed(() => {
   const color = selected_horn.value.tone_colors[score - 1];
   // 音符
   const char = score_map[score];
+  // 番目
+  const number = score_pointer.value + 1;
   // HTML生成
-  return `<span style="color: ${color}">${char}</span>`;
+  return `<span class="tag has-text-weight-bold is-size-6" style="color: ${color}">${number}音目${char}</span>`;
 });
 // コマンドの選択肢
 const selectable_commands = computed(() => {
@@ -75,19 +77,20 @@ const addEffects = (event, effect) => {
   // 音符並びHTML要素を取得
   let score_html = event.currentTarget.querySelector("span").innerHTML;
   // 最初じゃない場合
-  if (added_effects.value.length > 0) {
-    // 既存の最後のスコア
-    const last_score_fc = added_effects.value[added_effects.value.length - 1].score;
+  if (added_score.value.length > 0) {
+    // 既存のスコア
+    const score_fc = added_score.value.join("");
     // 今回追加するスコア
     const add_score_fc = add_effect.score;
     // 一致位置（ない場合は0）
     let position = 0;
     // 今回追加を後ろから前に移動させて一致箇所を探す
-    for (let i = 0; i <= add_score_fc.length; i++) {
-      const sub_last_score_fc = last_score_fc.slice(-i);
+    // 完全一致をしないための-1
+    for (let i = 0; i <= add_score_fc.length - 1; i++) {
+      const sub_score_fc = score_fc.slice(-i);
       const sub_add_score_fc = add_score_fc.slice(0, i);
-      // 一致したら終了(既存の最後と完全一致はNG)
-      if (sub_last_score_fc === sub_add_score_fc && !(last_score_fc === add_score_fc && sub_last_score_fc === last_score_fc && sub_add_score_fc === add_score_fc)) {
+      // 一致したら終了
+      if (sub_score_fc === sub_add_score_fc) {
         position = i;
         break;
       }
@@ -143,6 +146,13 @@ const formatScore = (score, tone_colors) => {
 
 <template>
   <main>
+    <div class="block mb-6">
+      <div class="title is-4">モンハンワイルズ狩猟笛音色コンボルート選定ツール</div>
+      <a
+        href="https://www.actionpterygii.com/"
+        class="is-underlined actionpterygii"
+      >actionpterygii</a>
+    </div>
     <div class="block">
       <div class="title is-6">①狩猟笛を選択</div>
       <div class="select is-small">
@@ -186,25 +196,17 @@ const formatScore = (score, tone_colors) => {
       v-if="added_effects.length"
       class="block"
     >
-      <div
-       class="box"
-      >
-        <div
-          class="mb-4"
-        >
+      <div class="box">
+        <div class="mb-4">
           選択された旋律
         </div>
-        <div
-          class="added_effects"
-        >
+        <div class="is-flex added_effects">
           <div
             v-for="(added_effect, index) in added_effects"
             :key="index"
-            class="mr-5"
+            class="mr-2"
           >
-            <p
-              class="is-size-7 added_effect_name"
-            >
+            <p class="is-size-7 has-text-centered">
               {{ added_effect.effect_name }}
             </p>
             <div
@@ -226,9 +228,12 @@ const formatScore = (score, tone_colors) => {
       class="block"
     >
       <div class="title is-6">③コマンドを選択</div>
-      <div>
+      <div
+        v-if="added_score.length !== score_pointer"
+        class="is-flex mb-4"
+      >
         <div v-html="next_tone"></div>
-        <div class="select is-small">
+        <div class="select is-small ml-3">
           <select
             v-if="selectable_commands.length"
             v-model="selected_command"
@@ -245,20 +250,17 @@ const formatScore = (score, tone_colors) => {
         </div>
       </div>
       <div v-if="added_commands.length">
-        <div class="box">
-          <div>
-            <div
-              v-for="added_command in added_commands"
-              :key="added_command.id"
-            >
-              <div>
-                <p>
-                  {{ added_command.button }}
-                </p>
-                <p>
-                  {{ added_command.text }}
-                </p>
-              </div>
+        <div class="box is-flex is-flex-wrap-wrap">
+          <div
+            v-for="added_command in added_commands"
+            :key="added_command.id"
+            class="added_command tag is-large py-5 mr-5 my-2 is-flex is-flex-direction-column"
+          >
+            <div>
+              {{ added_command.button }}
+            </div>
+            <div class="is-size-7">
+              {{ added_command.text }}
             </div>
           </div>
         </div>
@@ -279,13 +281,28 @@ main {
   margin: 10px;
 }
 
+/* 選択された旋律 */
 .added_effects {
-  display: flex;
   overflow-x: auto;
   white-space: nowrap;
 }
-.added_effect_name {
-  text-align: center;
+
+.added_command {
+  position: relative;
+}
+
+.added_command:not(:last-child)::after {
+  content: "→";
+  font-size: 0.75rem;
+  display: inline-block;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.actionpterygii {
+  color: #33cccc;
 }
 
 /* bulma+ */
